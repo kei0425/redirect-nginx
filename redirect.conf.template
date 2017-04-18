@@ -1,0 +1,5 @@
+server {
+    server_name localhost;
+    rewrite ^(.*)$ http://${REDIRECT_HOST}$1 permanent;
+}
+
